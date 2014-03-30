@@ -3,6 +3,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
+
 class Solution:
     # @param head, a ListNode
     # @return a ListNode
@@ -10,14 +11,15 @@ class Solution:
         
         if head is None: return head
         
-        while (head is not None and head.next is not None):
-            if head.val == head.next.val:
-                head.next = head.next.next
-            
+        tempHead = head #// Node for traversal
+        while (tempHead is not None):
+            if tempHead.next is None: return head
+            if tempHead.val == tempHead.next.val:
+                tempHead.next = tempHead.next.next
             else:
-                head = head.next
+                tempHead = tempHead.next
             
-        return head
+        return head    
      
 if __name__=="__main__" :
     
@@ -31,7 +33,7 @@ if __name__=="__main__" :
     b=ListNode(2)
     c=ListNode(3)
     d=ListNode(3)
-    root.next=a
+    root.next=b
     a.next=b
     b.next=c
     c.next=d
