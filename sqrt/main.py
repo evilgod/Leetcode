@@ -1,3 +1,3 @@
 import sqrt
 
-print sqrt.Solution().sqrt(82)
+print (sqrt.Solution().sqrt(82))

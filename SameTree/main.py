@@ -18,4 +18,4 @@ root2.right.right=TreeNode(6)
 root2.right.left=TreeNode(7)
 
 result=sametree.Solution()
-print result.isSameTree(root1, root2)
+print (result.isSameTree(root1, root2))

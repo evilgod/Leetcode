@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: str
         """
         s_list=list(s)
-        for i in range(len(s)/2):
+        for i in range(len(s)//2):
             s_list[i],s_list[-(i+1)]=s_list[-(i+1)],s_list[i]
         return ''.join(s_list)
     def reverseString2(self, s):

@@ -24,4 +24,4 @@ class Solution:
 if __name__=="__main__":
 
     rom="DCXXI"
-    print Solution().romanToInt(rom)
+    print (Solution().romanToInt(rom))

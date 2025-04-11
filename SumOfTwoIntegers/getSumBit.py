@@ -12,5 +12,5 @@ class Solution(object):
             return sum 
         else:
             return ~(sum^MASK)
-# if __name__== "__main__":
-#     print Solution().getSum(-1,1)
+if __name__== "__main__":
+    print (Solution().getSum(-1,1))

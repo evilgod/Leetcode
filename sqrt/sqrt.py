@@ -23,4 +23,4 @@ class Solution:
 
 if __name__== "__main__":
 
-    print Solution().sqrt(6)
+    print (Solution().sqrt(6))
