@@ -63,8 +63,8 @@ if __name__== "__main__":
     #data=[netInt, net2Int, netInt]
     data=[net1Int,NestedInteger([net4Int,NestedInteger([net6Int])])]
     
-    print net1Int.getInteger()
-    print net1Int.getList()
-    print net2Int.getInteger()
-    print netInt.getList()
-    print Solution().depthSum(data)
+    print (net1Int.getInteger())
+    print (net1Int.getList())
+    print (net2Int.getInteger())
+    print (netInt.getList())
+    print (Solution().depthSum(data))
